@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.content{
+    width: 250px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content label{
+    margin: 0px 0px 3px 0px;
+}
+
+.content input{
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+#grancum{
+    padding: 8px 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #262626;
+    color: white;
+    letter-spacing: 0.5px;
+}
+#message{
+    text-align: center;
+    margin-top: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}

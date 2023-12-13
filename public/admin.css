@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    margin-top: 80px;
+}
+
+.content{
+    width: 300px;
+}
+
+.content input {
+    padding: 5px;
+}
+
+.content button{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#result{
+    width: 300px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#change-data.active{
+    width: 300px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#change-data.inactive{
+    display: none;
+}
+
+#change-data input {
+    padding: 5px;
+    width: 240px;
+}
+
+.but{
+    width: 255px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.active{
+    display: none;
+}
+
+#change-message{
+    margin-top: 8px;
+}
+
+a{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 5%;
+    left: 47%;
+    transform: translate(-50%);
+    font-size: 16px;
+    font-weight: 600;
+}
