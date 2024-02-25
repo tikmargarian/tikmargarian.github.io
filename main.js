@@ -44,13 +44,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function checkInputs () {
         let isValid = true;
-        validation( name, name.value.trim() !== "", "Error message");
-        validation( surName, surName.value.trim() !== "", "Error message");
-        validation( email, isEmail(email.value.trim()), "Error message");
+        validation( name, name.value.trim() !== "", "Name cannot be blank");
+        validation( surName, surName.value.trim() !== "", "Surname cannot be blank");
+        validation( email, isEmail(email.value.trim()), "Not a valid email");
         validation( password, password.value.trim().length >= 8, "Password must be at least 8 characters");
         validation(confirmPassword, confirmPassword.value.trim() === password.value.trim() && confirmPassword.value.length >= 8, "Password must be confirmed");
-        validation( phone, isPhone(phone.value.trim()), "Error message");
-
+        validation( phone, isPhone(phone.value.trim()), "Password must be at least 8 characters");
+        
         document.querySelectorAll(".form-content").forEach((content) => {
             if(content.classList.contains("error")){
                 isValid = false;
